@@ -145,6 +145,44 @@
   details summary{cursor:pointer;color:#fff;font-weight:600}
   details h3{color:#fff;font-size:1.05rem;margin-top:1em}
   details p{font-size:.88rem}
+
+  /* Phones */
+  @media(max-width:600px){
+    body{font-size:16px}
+    header .wrap{height:64px}
+    .logo img{height:36px}
+    header .btn{padding:8px 16px;font-size:.9rem;white-space:nowrap}
+    section[id]{scroll-margin-top:64px}
+    .hero{min-height:0;padding:64px 0 56px}
+    .hero h1{font-size:1.7rem}
+    .hero p{font-size:1rem}
+    .hero-bar{padding:22px 0 24px}
+    .hero-bar .actions .btn{flex:1 1 100%;text-align:center}
+    .badges{gap:6px 16px;margin-top:16px;font-size:.88rem}
+    section{padding:44px 0}
+    .section-head{margin-bottom:24px}
+    .tiles-sec{padding:34px 0 38px}
+    .tiles{gap:12px}
+    .tile{padding:14px 16px;gap:14px}
+    .tile svg{width:44px;height:44px}
+    .tile strong{font-size:1.15rem}
+    .grid{gap:18px}
+    .card .pic{aspect-ratio:16/9}
+    .card .body{padding:18px 18px 22px}
+    .card h3{font-size:1.2rem}
+    .price{font-size:1.3rem}
+    .delivery{padding:34px 0}
+    .delivery-box img{width:90px}
+    .delivery-box h2{font-size:1.35rem}
+    .about-banner{padding:64px 0}
+    .about-wrap{padding:36px 0 44px}
+    .ppa img{width:170px}
+    .contact{gap:26px}
+    form{padding:20px}
+    .contact-info .big{font-size:1.1rem}
+    footer{padding:28px 0}
+    .to-top{right:14px;bottom:14px;width:44px;height:44px}
+  }
 </style>
 </head>
 <body>
@@ -157,7 +195,7 @@
       <a href="#photo">Photography</a>
       <a href="#video">Videos</a>
       <a href="#about">About</a>
-      <a class="btn" href="#contact">Schedule a Project</a>
+      <a class="btn" href="#contact">Contact Us</a>
     </nav>
   </div>
 </header>
@@ -389,8 +427,7 @@
         <p style="margin-top:1.2em"><strong>By appointment only.</strong> Serving St. Clairsville and the surrounding area. Drop-off and pickup are arranged when you schedule, and photo sessions are held on location.</p>
       </div>
 
-      <!-- Replace YOUR_FORM_ID with your Formspree form ID (formspree.io) -->
-      <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <form id="contact-form" action="https://formspree.io/f/xzeenezb" method="POST">
         <label for="name">Name</label>
         <input id="name" name="name" type="text" autocomplete="name">
         <label for="email">Email *</label>
