@@ -1,0 +1,19 @@
+{
+  "name": "Parlo Media",
+  "short_name": "Parlo Media",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0a4876",
+  "background_color": "#ffffff",
+  "display": "browser"
+}
