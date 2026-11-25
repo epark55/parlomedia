@@ -1,0 +1,63 @@
+/* VOICE calm, plain, trustworthy small-studio apps
+   IDEA an app shelf: one card per app, like a product sheet
+   PICTURE each app's own icon, large, on its card and page header
+   COLOUR Parlo navy #0a4876 / deep #06304f, white panels, soft blue #e8f0f7
+   TYPE Georgia headings + system sans body, same as the Parlo Media site
+   LAYOUT header, navy hero band, card grid, footer */
+:root{--navy:#0a4876;--deep:#06304f;--soft:#e8f0f7;--line:#dde2e7;--gray:#5f666d;--bg:#f4f6f8;--ink:#1c232a;--card:#fff}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;overflow-x:clip}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.15;margin:0 0 .45em;color:var(--deep);text-wrap:balance}
+a{color:var(--navy)}
+a:focus-visible,summary:focus-visible{outline:3px solid #9ec3e6;outline-offset:2px;border-radius:6px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header{background:#fff;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px;flex-wrap:wrap}
+.brand{font-family:Georgia,serif;font-size:1.35rem;font-weight:700;color:var(--deep);text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:4px 18px}
+nav a{text-decoration:none;color:var(--gray);font-size:.95rem;padding:10px 0}
+nav a:hover,nav a[aria-current]{color:var(--navy)}
+.hero{background:linear-gradient(160deg,var(--navy),var(--deep));color:#fff;padding:clamp(44px,7vw,88px) 0}
+.hero h1{color:#fff;font-size:clamp(2.1rem,5vw,3.2rem);margin:0}
+.hero p{font-size:clamp(1.05rem,2.2vw,1.3rem);opacity:.92;margin:.5em 0 0;max-width:620px}
+.apphead{display:flex;gap:26px;align-items:center}
+.apphead .ico{width:clamp(88px,14vw,128px);height:clamp(88px,14vw,128px);flex:none;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+.price{display:inline-block;margin-top:14px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:4px 14px;font-weight:600;font-size:.95rem}
+main{padding:clamp(36px,5vw,64px) 0}
+.ico{border-radius:22%;overflow:hidden;display:block;background:var(--soft)}
+.ico svg,.ico img{width:100%;height:100%;display:block;object-fit:cover}
+.moon{background:radial-gradient(circle at 50% 50%,#f4f1e8 0 30%,#cfcabd 31% 33%,transparent 34%),radial-gradient(circle at 50% 50%,#1b2433,#05080d)}
+.apps{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr))}
+.app{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;display:flex;flex-direction:column;gap:14px;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s}
+.app:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(6,48,79,.12)}
+.app .ico{width:96px;height:96px}
+.app h2{font-size:1.45rem;margin:0}
+.app p{margin:0;color:var(--gray)}
+.app .tag{font-weight:700;color:var(--navy)}
+.app .more{margin-top:auto;font-weight:600;color:var(--navy)}
+.lead{font-size:1.1rem;color:var(--gray);max-width:680px;margin:0 0 32px}
+.feat{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));margin:0 0 48px;padding:0;list-style:none}
+.feat li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+.feat strong{display:block;font-family:Georgia,serif;font-size:1.12rem;color:var(--deep);margin-bottom:4px}
+.feat span{color:var(--gray);font-size:.97rem}
+section+section{margin-top:44px}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:0 0 10px}
+summary{cursor:pointer;font-weight:600;padding:15px 18px;list-style-position:inside}
+details div{padding:0 18px 16px;color:var(--gray)}
+details p{margin:.3em 0}
+.box{background:var(--soft);border-radius:14px;padding:22px 24px;margin-top:30px}
+.box p{margin:.2em 0}
+.policy{max-width:760px}
+.policy h2{font-size:1.5rem;margin-top:1.6em}
+.policy h3{font-size:1.15rem;margin-top:1.2em}
+.policy ul{padding-left:1.2em}
+.policy li{margin:.3em 0}
+.toc{display:flex;flex-wrap:wrap;gap:8px 12px;margin:0 0 10px}
+.toc a{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:600;font-size:.95rem}
+.small{font-size:.92rem;color:var(--gray)}
+footer{background:#0d1b26;color:#aab4be;padding:34px 0;font-size:.93rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center}
+footer a{color:#e6edf3}
+footer .links{display:flex;flex-wrap:wrap;gap:8px 22px}
+@media(max-width:600px){body{font-size:16px}.apphead{flex-direction:column;align-items:flex-start;gap:18px}.app{padding:22px}.app .ico{width:80px;height:80px}}
+@media(prefers-reduced-motion:reduce){.app{transition:none}.app:hover{transform:none}}
